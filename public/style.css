@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --text-primary-color: #fc2779;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .d-none {
+    display: none;
+  }
+}
