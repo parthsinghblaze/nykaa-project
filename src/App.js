@@ -13,6 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Categories />} />
         <Route path="/girls" element={<Categoriespage />} />
+        <Route path="/mens" element={<Categoriespage />} />
+        <Route path="/kids" element={<Categoriespage />} />
+        <Route path="/home" element={<Categoriespage />} />
+        <Route path="/luxe" element={<Categoriespage />} />
+        <Route path="/tech" element={<Categoriespage />} />
         <Route path="/product-lists" element={<ProductListing />} />
       </Routes>
     </div>
