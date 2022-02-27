@@ -1,28 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
 import logo from "../images/logo.png";
 
 function Splash() {
+  const [splashScreen, setSplashScreen] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSplashScreen(false);
+    }, 4000);
+  }, []);
+
   return (
-    <motion.div
-      initial={{ scale: 1 }}
-      animate={{ scale: 6, opacity: 0 }}
-      transition={{ delay: 2, duration: 1 }}
+    <Wrapper
+      className={`container-fluid ${!splashScreen ? "splash-none" : ""}`}
     >
-      <Wrapper className="container-fluid">
-        <div className="container">
-          <div className="main">
-            <img src={logo} alt="" />
-          </div>
+      <div className="container">
+        <div className="main">
+          <img src={logo} alt="" />
         </div>
-      </Wrapper>
-    </motion.div>
+      </div>
+    </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100vh;
   background-color: black;
   .main {
     height: 100vh;
