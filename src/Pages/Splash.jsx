@@ -30,6 +30,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   background-color: black;
+  z-index: 1000;
   .main {
     height: 100vh;
     width: 100%;

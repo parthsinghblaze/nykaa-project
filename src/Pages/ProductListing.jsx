@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import CategoryNav from "../Components/CategoryNav";
 import ProductListingItem from "../Components/ProductListingItem";
@@ -19,9 +20,11 @@ function ProductListing() {
         </div>
         <div className="product-main-section">
           {productListingItem.map((item, index) => {
-            const { title, smallDesp, price, prevPrice, discount, imgUrl } =
-              item;
-            return <ProductListingItem {...item} />;
+            return (
+              <Link to="/product-item-details">
+                <ProductListingItem {...item} />
+              </Link>
+            );
           })}
         </div>
       </Wrapper>

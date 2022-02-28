@@ -64,13 +64,12 @@ const Wrapper = styled.div`
   .category-header {
     display: flex;
     justify-content: space-between;
-
     .left-side {
       display: flex;
       gap: 1rem;
       img {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 8vw;
         object-fit: cover;
         border-radius: 50%;
         object-position: center;
@@ -82,12 +81,12 @@ const Wrapper = styled.div`
         justify-content: space-between;
 
         h3 {
-          font-size: 2vw;
+          font-size: 3vw;
           color: var(--text-primary-color);
         }
 
         h2 {
-          font-size: 4vw;
+          font-size: 3.5vw;
         }
       }
     }
